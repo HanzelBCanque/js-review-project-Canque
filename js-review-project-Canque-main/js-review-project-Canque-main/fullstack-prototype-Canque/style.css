@@ -1,0 +1,19 @@
+/*Hide everything by default  */
+.page {display: none;}
+/*Show only the active view*/
+.page.active {display: block;}
+
+/*The Admin Filter */
+body.not-authenticated .role-logged-in {display: none;}
+body.authenticated .role-logged-out { display: none; }
+body.is-admin .role-admin {display: block;}
+
+.btn-success {
+    background-color: #198754;
+    border: none;
+    padding: 8px 24px;
+}
+
+.btn-outline-secondary {
+    border-radius: 6px;
+}
